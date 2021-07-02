@@ -21,7 +21,7 @@
 
     <properties>
         <spring_boot_version>2.5.2</spring_boot_version>
-        <java.version>8</java.version>
+        <java.version>16</java.version>
     </properties>
 
     <prerequisites>
