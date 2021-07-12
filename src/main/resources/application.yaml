@@ -1,11 +1,16 @@
 spring:
+  # datasource:
+  #   url: 'jdbc:h2:file:./target/database/h2'
+  #   #url: jdbc:h2:mem:test_mem
+  #   username: sa
+  #   password: null
+  #   driverClassName: org.h2.Driver
+  #   max-active: 15
   datasource:
-    url: 'jdbc:h2:file:./target/database/h2'
-    #url: jdbc:h2:mem:test_mem
-    username: sa
-    password: null
-    driverClassName: org.h2.Driver
-    max-active: 15
+    url: 'jdbc:postgresql://postgres:5432/hapifhir'
+    username: hapifhir
+    password: hapifhir
+    driverClassName: org.postgresql.Driver
 
     # database connection pool size
     hikari:
